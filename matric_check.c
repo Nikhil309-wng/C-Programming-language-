@@ -2,26 +2,29 @@
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int n, m, i, j, is_symmetric = 1;
     int matrix[10][10];
 
-    printf("Enter the number of rows and columns of the matrix: ");
+    printf("Enter the number of rows and columns of the matrix: ");    // input number of rows and columns
     scanf("%d %d", &n, &m);
 
-    if (n != m) {
+    if (n != m)    // condition to check if the matrix is square
+     {
         printf("Matrix is not symmetric (not a square matrix).\n");
         return 0;
     }
 
-    printf("Enter the elements of the matrix:\n");
+    printf("Enter the elements of the matrix:\n");       // input elements of the matrix
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
             scanf("%d", &matrix[i][j]);
         }
     }
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++)         // checking for symmetry
+    {
         for (j = 0; j < m; j++) {
             if (matrix[i][j] != matrix[j][i]) {
                 is_symmetric = 0;
@@ -33,9 +36,12 @@ int main() {
         }
     }
 
-    if (is_symmetric) {
+    if (is_symmetric)    // condition to check if the matrix is symmetric
+     {
         printf("Matrix is symmetric.\n");
-    } else {
+    }
+     else
+      {
         printf("Matrix is not symmetric.\n");
     }
 

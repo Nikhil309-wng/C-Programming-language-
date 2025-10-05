@@ -6,9 +6,9 @@
 int main()
 {
     int i, j, n, temp, *a;
-    printf("Enter the number of elements: ");
+    printf("Enter the number of elements: ");  //               enter the size of array 
     scanf("%d", &n);
-    printf("Enter the elements:\n");
+    printf("Enter the elements:\n");     // enter the elements of array
     a = (int *) malloc(n * sizeof(int));
     for(i=0; i<n; i++)
     {

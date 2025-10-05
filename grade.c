@@ -1,11 +1,16 @@
+// program to find the grade of a student based on percentage
+
 #include<stdio.h>
 
-int main(){
+int main()      // main function
+{
 
     int pc;
-    printf("Enter the percentage:\n");
+    printf("Enter the percentage:\n");   // input percentage
     scanf("%d",&pc);
-    if(pc<0 && pc>100)
+
+
+    if(pc<0 && pc>100)                // condition to check if the percentage is valid or not
        printf("Invalid choice\n");
     else if(pc>90 && pc<=100)
        printf("A+ grade \n");

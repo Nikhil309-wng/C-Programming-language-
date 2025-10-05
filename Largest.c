@@ -1,12 +1,17 @@
+// program to find the largest of three numbers
+
 #include<stdio.h>
 #include<math.h>
 
-int main(){
+int main()
+{
     int a,b,c;
-    printf("Enter the Numbers:\n");
+    printf("Enter the Numbers:\n");   // input three numbers
     scanf("%d%d%d",&a,&b,&c);
 
-    if(a>b)
+
+    // condition to check which number is largest by using nested if-else
+    if(a>b)             
     {   if(a>c)
         {
            printf("%d is largest",a);
@@ -29,5 +34,7 @@ int main(){
     }
 
 
-    return 0;
+
+
+    return 0;   // return statement executed successfully when program ends without any error
 }

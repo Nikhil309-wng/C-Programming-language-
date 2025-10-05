@@ -3,29 +3,31 @@
 #include <stdio.h>
 #include<math.h>
 
-int main() {
+int main()
+ {
     int n, m, p, q, i, j, k;
-    int matrix1[10][10], matrix2[10][10], result[10][10];
+    int matrix1[10][10], matrix2[10][10], result[10][10];    // declaring three 2D arrays to store the matrices and their product
 
-    printf("Enter the number of rows and columns of the first matrix: ");
+    printf("Enter the number of rows and columns of the first matrix: ");       // input number of rows and columns of the first matrix
     scanf("%d %d", &n, &m);
 
-    printf("Enter the number of rows and columns of the second matrix: ");
+    printf("Enter the number of rows and columns of the second matrix: ");    // input number of rows and columns of the second matrix
     scanf("%d %d", &p, &q);
 
-    if (m != p) {
+    if (m != p)   // condition to check if matrix multiplication is possible
+    {
         printf("Matrix multiplication is not possible (incompatible dimensions).\n");
         return 0;
     }
 
-    printf("Enter the elements of the first matrix:\n");
+    printf("Enter the elements of the first matrix:\n");    // input elements of the first matrix
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
             scanf("%d", &matrix1[i][j]);
         }
     }
 
-    printf("Enter the elements of the second matrix:\n");
+    printf("Enter the elements of the second matrix:\n");     //input elements of the second matrix
     for (i = 0; i < p; i++) {
         for (j = 0; j < q; j++) {
             scanf("%d", &matrix2[i][j]);
@@ -48,7 +50,7 @@ int main() {
         }
     }
 
-    printf("Resultant matrix after multiplication:\n");
+    printf("Resultant matrix after multiplication:\n");     // printing the resultant matrix
     for (i = 0; i < n; i++) {
         for (j = 0; j < q; j++) {
             printf("%d ", result[i][j]);

@@ -5,18 +5,21 @@
 int main(){
       
          int i, e, n, f, l, mid, a[100];
-            printf("Enter the number of elements: ");
+
+            printf("Enter the number of elements: ");  // size of the array
             scanf("%d", &n);
-            printf("Enter the elements in sorted order:\n");
+            printf("Enter the elements in sorted order:\n");   // elements of the array in sorted order
             for(i=0; i<n; i++)
             {
                   scanf("%d", &a[i]);
             }
-            printf("Enter the element to be searched: ");
+            printf("Enter the element to be searched: ");  // element to be searched
             scanf("%d", &e);
             f = 0;
             l = n - 1;
-            while (f<=l)
+
+
+            while (f<=l)    
             {
               mid = (f + l) / 2;
               if (a[mid] == e)
@@ -34,7 +37,7 @@ int main(){
               }
             }
 
-            if(f > l)
+            if(f > l)       // condition to check if the element is not found in the array
             {
                   printf("Element not found in the array\n");
             }

@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-#define code
+#define code            // defining a macro named code
 
 int main()
 {

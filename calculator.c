@@ -1,13 +1,16 @@
+// Simple calculator program in C
+
 #include<stdio.h>
 #include<math.h>
 
 int main(){
     
    int a,b,c,choice;
-   printf("Enter two values:\n");
+
+   printf("Enter two values:\n");   // input two numbers
    scanf("%d%d",&a,&b);
 
-   printf("Enter your choice:\n");
+   printf("Enter your choice:\n");   // input choice of operation
    printf("enter 1 for addition:\n");
    printf("enter 2 for substration:\n");
    printf("enter 3 for multiplication:\n");
@@ -15,7 +18,7 @@ int main(){
    printf("enter 5 for modulo division:\n");
    scanf("%d",&choice);
 
-   switch (choice)
+   switch (choice)    // switch case to perform operations based on user choice
    {
    case 1: 
         printf("Sum is %d", c=a+b);

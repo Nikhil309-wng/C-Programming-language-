@@ -1,7 +1,7 @@
 // program to demonstrate the use of enumeration in C
 #include <stdio.h>
 
-enum Weekday {
+enum Weekday {                    // defining an enumeration type named Weekday
     SUNDAY,
     MONDAY,
     TUESDAY,
@@ -12,13 +12,14 @@ enum Weekday {
 };
 
 int main() {
-    enum Weekday today;
-    today = WEDNESDAY;
+    enum Weekday today;     // declaring a variable of type Weekday
+    today = WEDNESDAY;         // assigning a value to the variable
 
     printf("Day number: %d\n", today);
     printf("Day name: ");
 
-    switch (today) {
+    switch (today)              // switch case to print the name of the day
+     {             
         case SUNDAY:    printf("Sunday\n"); break;
         case MONDAY:    printf("Monday\n"); break;
         case TUESDAY:   printf("Tuesday\n"); break;
