@@ -5,8 +5,8 @@
 int main()
 {
     int i, n, *a, largest, smallest;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
+    printf("Enter the number of elements: ");   
+     scanf("%d", &n);
     printf("Enter the elements:\n");
     a = (int *) malloc(n * sizeof(int));
     for(i=0; i<n; i++)
