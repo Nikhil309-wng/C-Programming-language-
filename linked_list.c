@@ -1,3 +1,5 @@
+//program to create and traverse the linked list 
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -6,6 +8,8 @@ struct Node{
     struct Node *next;
 };
 
+
+//function to traverse the linked list
  void traversaloflinkedlist(struct Node *ptr){
 
     while(ptr != NULL){
